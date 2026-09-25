@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JAGAA's Munchies — Homemade Snacks, Made to Order</title>
+  <meta name="description" content="JAGAA's Munchies: fresh donuts, mandazi, chapati, samosas, pancakes, egg rolls, Rolex, Kikomando and Daddies — made to order. Call 0766189177.">
+  <meta name="theme-color" content="#B45309">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%A5%AF%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+
+  <!-- SVG icon sprite -->
+  <svg xmlns="http://www.w3.org/2000/svg" style="display:none">
+    <symbol id="i-wheat" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22V8"/><path d="M12 12c-2.5 0-4-1.8-4-4 2.5 0 4 1.8 4 4Zm0 0c2.5 0 4-1.8 4-4-2.5 0-4 1.8-4 4Z"/><path d="M12 16.5c-2.5 0-4-1.8-4-4 2.5 0 4 1.8 4 4Zm0 0c2.5 0 4-1.8 4-4-2.5 0-4 1.8-4 4Z"/><path d="M12 8c-1.2-1-1.6-2.6-1-4.5 1.6.8 2.2 2.6 1 4.5Zm0 0c1.2-1 1.6-2.6 1-4.5-1.6.8-2.2 2.6-1 4.5Z"/></g></symbol>
+    <symbol id="i-bag" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 7h12l1 14H5L6 7Z"/><path d="M9 7V6a3 3 0 0 1 6 0v1"/></g></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></g></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="3" width="14" height="18" rx="2"/><path d="M9 8h6M9 12h6M9 16h4"/></g></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2Z"/></symbol>
+    <symbol id="i-card" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 10h18M7 15h3"/></g></symbol>
+    <symbol id="i-truck" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h11v10H3zM14 10h4l3 3v3h-7"/><circle cx="7" cy="17.5" r="1.8"/><circle cx="17" cy="17.5" r="1.8"/></g></symbol>
+    <symbol id="i-plus" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" d="M12 5v14M5 12h14"/></symbol>
+    <symbol id="i-minus" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" d="M5 12h14"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M6 6l12 12M18 6 6 18"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M13 6l6 6-6 6"/></symbol>
+    <symbol id="i-chat" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" d="M4 5h16v11H9l-5 4V5Z"/></symbol>
+    <symbol id="i-party" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20 9 7l8 8-13 5Z"/><path d="M14 4v2M19 9h2M17 6l1.5-1.5M12 10c1-2 3-3 5-3"/></g></symbol>
+    <symbol id="i-briefcase" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M9 7V5h6v2M3 12h18"/></g></symbol>
+    <symbol id="i-box" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M3 8l9-4 9 4v9l-9 4-9-4V8Z"/><path d="M3 8l9 4 9-4M12 12v9"/></g></symbol>
+  </svg>
+
+  <!-- 1. NAVIGATION -->
+  <header class="nav" id="nav">
+    <div class="container nav__inner">
+      <a href="#top" class="logo" aria-label="JAGAA's Munchies home">
+        <svg class="logo__icon" aria-hidden="true"><use href="#i-wheat"/></svg>
+        <span class="logo__text">JAGAA's <em>Munchies</em></span>
+      </a>
+      <nav class="nav__links" aria-label="Main">
+        <a href="#menu">Menu</a>
+        <a href="#how-to-order">Order Online</a>
+        <a href="#parties">Catering</a>
+        <a href="#story">Our Story</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="nav__actions">
+        <button class="cart-btn" data-open-cart aria-label="Open your order">
+          <svg aria-hidden="true"><use href="#i-bag"/></svg>
+          <span class="cart-badge" data-cart-count>0</span>
+        </button>
+        <a href="#menu" class="btn btn--primary btn--sm nav__cta">Order Now</a>
+        <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+    <nav aria-label="Mobile">
+      <a href="#menu">Menu</a>
+      <a href="#how-to-order">Order Online</a>
+      <a href="#parties">Catering</a>
+      <a href="#story">Our Story</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a href="tel:0766189177" class="btn btn--primary btn--lg">
+      <svg aria-hidden="true"><use href="#i-phone"/></svg> Call 0766189177
+    </a>
+  </div>
+
+  <main id="top">
+
+    <!-- 2. HERO -->
+    <section class="hero">
+      <div class="hero__bg" role="img" aria-label="A plate of freshly fried golden mandazi"></div>
+      <div class="hero__overlay"></div>
+      <div class="container hero__content">
+        <p class="script hero__tagline">Freshly Made for Every Order</p>
+        <h1>Homemade Snacks, Chapati &amp; Street Food Favourites</h1>
+        <p class="hero__sub">Donuts, mandazi, samosas, egg rolls, Rolex, Kikomando and our famous Daddies — cooked fresh just for you, with a whole lot of love.</p>
+        <div class="hero__ctas">
+          <a href="#menu" class="btn btn--primary btn--lg">View the Menu</a>
+          <a href="tel:0766189177" class="btn btn--outline-light btn--lg">
+            <svg aria-hidden="true"><use href="#i-phone"/></svg> Call to Order
+          </a>
+        </div>
+      </div>
+      <div class="scallop" aria-hidden="true"></div>
+    </section>
+
+    <!-- 3. FAN FAVOURITES -->
+    <section class="section section--cream paper" id="specials">
+      <div class="container">
+        <div class="section__head">
+          <h2>Fresh Out of the Pan</h2>
+          <p class="section__meta"><svg aria-hidden="true"><use href="#i-clock"/></svg> Cooked fresh for every order — never sitting on a shelf</p>
+        </div>
+
+        <div class="specials">
+          <article class="special-card">
+            <span class="tag">Sweet Classic</span>
+            <div class="special-card__img"><img src="images/mandazi.jpg" alt="A plate of golden mandazi" loading="lazy"></div>
+            <div class="special-card__body">
+              <h3>Mandazi</h3>
+              <p>Soft, lightly sweet fried dough bites — perfect with a cup of tea.</p>
+              <div class="special-card__foot">
+                <div class="price">5 kr <small>· 5 for 30 kr</small></div>
+                <button class="btn btn--primary btn--sm" data-add="mandazi" data-opt="0">Add to Order</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="special-card">
+            <span class="tag">Savoury Pick</span>
+            <div class="special-card__img"><img src="images/egg-roll.jpg" alt="Crumbed egg rolls in a bowl, one cut open to show the egg inside" loading="lazy"></div>
+            <div class="special-card__body">
+              <h3>Egg Roll</h3>
+              <p>A whole egg wrapped in seasoned potato, crumbed and fried until golden.</p>
+              <div class="special-card__foot">
+                <div class="price">50 kr <small>· 5 for 300 kr</small></div>
+                <button class="btn btn--primary btn--sm" data-add="eggroll" data-opt="0">Add to Order</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="special-card">
+            <span class="tag">Freshly Rolled</span>
+            <div class="special-card__img"><img src="images/chapati.jpg" alt="Soft layered chapati on a white plate" loading="lazy"></div>
+            <div class="special-card__body">
+              <h3>Chapati</h3>
+              <p>Soft, layered flatbread cooked on the pan — on its own or as a Rolex.</p>
+              <div class="special-card__foot">
+                <div class="price">15 kr <small>· 5 for 80 kr</small></div>
+                <button class="btn btn--primary btn--sm" data-add="chapati" data-opt="0">Add to Order</button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. MENU -->
+    <section class="section" id="menu">
+      <div class="container">
+        <div class="section__head">
+          <p class="script eyebrow">Snack Menu</p>
+          <h2>Our Munchies</h2>
+          <p class="section__lead">Every item is made after your order and payment come in. Buy five and save.</p>
+        </div>
+
+        <div class="tabs" role="tablist" aria-label="Menu categories">
+          <button class="tab is-active" role="tab" aria-selected="true" data-tab="all">All Munchies</button>
+          <button class="tab" role="tab" aria-selected="false" data-tab="sweet">Sweet Treats</button>
+          <button class="tab" role="tab" aria-selected="false" data-tab="savoury">Savoury Bites</button>
+          <button class="tab" role="tab" aria-selected="false" data-tab="chapati">Chapati Meals</button>
+        </div>
+
+        <div class="menu-grid" id="menu-grid" role="tabpanel" aria-live="polite"></div>
+
+        <p class="menu-legend">🥚 contains egg &nbsp;·&nbsp; 🫘 contains beans &nbsp;·&nbsp; 🔥 fried fresh to order</p>
+
+        <div class="center">
+          <button class="btn btn--ghost" data-lightbox-src="images/menu-poster.jpg" data-lightbox-caption="JAGAA's Munchies snack menu">
+            View Full Menu Poster <svg aria-hidden="true"><use href="#i-arrow"/></svg>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. OUR STORY -->
+    <section class="section section--card paper" id="story">
+      <div class="container story">
+        <div class="story__photo">
+          <img src="images/founder.jpg" alt="The face behind JAGAA's Munchies, smiling in a pink suit" loading="lazy">
+          <span class="story__stamp script">Made with love</span>
+        </div>
+        <div class="story__text">
+          <p class="script eyebrow">Our Story</p>
+          <h2>From Our Kitchen to Yours</h2>
+          <p>JAGAA's Munchies started with a simple idea: the snacks we grew up loving — warm mandazi, crispy samosas, soft chapati and a proper Rolex — should be easy to get, and should always taste homemade.</p>
+          <p>That's why we never cook in bulk and leave things waiting. Every donut, samosa and chapati is made fresh after you order, so it reaches you the way it's meant to be enjoyed.</p>
+          <p class="signature">— JAGAA's Munchies</p>
+          <a href="#contact" class="link-arrow">Say hello <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. HOW ORDERING WORKS -->
+    <section class="section section--cream" id="how-to-order">
+      <div class="container">
+        <div class="section__head">
+          <p class="script eyebrow">Simple &amp; Fresh</p>
+          <h2>How Ordering Works</h2>
+          <p class="section__lead">We only make after orders and payments are made — that's how everything stays fresh.</p>
+        </div>
+
+        <ol class="steps">
+          <li class="step">
+            <span class="step__icon"><svg aria-hidden="true"><use href="#i-menu"/></svg></span>
+            <span class="step__num">1</span>
+            <h3>Pick Your Munchies</h3>
+            <p>Browse the menu and add what you love to your order.</p>
+          </li>
+          <li class="step">
+            <span class="step__icon"><svg aria-hidden="true"><use href="#i-card"/></svg></span>
+            <span class="step__num">2</span>
+            <h3>Send &amp; Pay</h3>
+            <p>Text or call 0766189177 with your order. We start cooking once payment is made.</p>
+          </li>
+          <li class="step">
+            <span class="step__icon"><svg aria-hidden="true"><use href="#i-truck"/></svg></span>
+            <span class="step__num">3</span>
+            <h3>Pickup or Delivery</h3>
+            <p>Delivery is arranged directly between you and us — just ask.</p>
+          </li>
+        </ol>
+
+        <div class="center">
+          <a href="#menu" class="btn btn--primary btn--lg">Start Your Order</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. GALLERY -->
+    <section class="section" id="gallery">
+      <div class="container">
+        <div class="section__head">
+          <p class="script eyebrow">Straight From the Kitchen</p>
+          <h2>A Taste of JAGAA's</h2>
+        </div>
+        <div class="gallery">
+          <figure class="gallery__item gallery__item--wide" data-lightbox-src="images/mandazi.jpg" data-lightbox-caption="Mandazi, fried golden">
+            <img src="images/mandazi.jpg" alt="Golden mandazi piled on a plate" loading="lazy">
+            <figcaption>Mandazi, fried golden</figcaption>
+          </figure>
+          <figure class="gallery__item gallery__item--tall" data-lightbox-src="images/founder.jpg" data-lightbox-caption="The face behind the munchies">
+            <img src="images/founder.jpg" alt="The founder of JAGAA's Munchies" loading="lazy">
+            <figcaption>The face behind the munchies</figcaption>
+          </figure>
+          <figure class="gallery__item" data-lightbox-src="images/egg-roll.jpg" data-lightbox-caption="Egg rolls, sliced open">
+            <img src="images/egg-roll.jpg" alt="Egg rolls in a bowl" loading="lazy">
+            <figcaption>Egg rolls, sliced open</figcaption>
+          </figure>
+          <figure class="gallery__item gallery__item--tall" data-lightbox-src="images/menu-poster.jpg" data-lightbox-caption="Our snack menu">
+            <img src="images/menu-poster.jpg" alt="JAGAA's Munchies snack menu poster" loading="lazy">
+            <figcaption>Our snack menu</figcaption>
+          </figure>
+          <figure class="gallery__item gallery__item--wide" data-lightbox-src="images/chapati.jpg" data-lightbox-caption="Soft, layered chapati">
+            <img src="images/chapati.jpg" alt="Chapati rolled on a plate" loading="lazy">
+            <figcaption>Soft, layered chapati</figcaption>
+          </figure>
+          <figure class="gallery__item" data-lightbox-src="images/samosa.jpg" data-lightbox-caption="Crispy samosas">
+            <img src="images/samosa.jpg" alt="Crispy samosas" loading="lazy">
+            <figcaption>Crispy samosas</figcaption>
+          </figure>
+        </div>
+        <p class="gallery__follow">Want to know when fresh batches are ready? <a href="sms:0766189177">Send us a text</a> and we'll keep you posted.</p>
+      </div>
+    </section>
+
+    <!-- 8. REVIEWS
+         SAMPLE REVIEWS — replace these with real customer feedback before launch. -->
+    <section class="section section--card paper" id="reviews">
+      <div class="container">
+        <div class="section__head">
+          <p class="script eyebrow">Kind Words</p>
+          <h2>What Our Customers Say</h2>
+        </div>
+        <div class="carousel" id="carousel">
+          <div class="carousel__viewport">
+            <div class="carousel__track">
+              <blockquote class="review">
+                <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+                <p>“The mandazi taste exactly like home. I ordered five and they were gone before lunch.”</p>
+                <footer>— Sarah N.</footer>
+              </blockquote>
+              <blockquote class="review">
+                <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+                <p>“Best Rolex I've had outside Uganda. Fresh, hot and generous.”</p>
+                <footer>— Brian K.</footer>
+              </blockquote>
+              <blockquote class="review">
+                <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+                <p>“Ordered samosas and egg rolls for a birthday — everyone asked where they came from.”</p>
+                <footer>— Grace A.</footer>
+              </blockquote>
+              <blockquote class="review">
+                <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+                <p>“The big pack of Daddies is dangerous. So crunchy. We're already on our second.”</p>
+                <footer>— Daniel O.</footer>
+              </blockquote>
+            </div>
+          </div>
+          <div class="carousel__dots" role="tablist" aria-label="Choose review"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 9. PARTIES & EVENTS -->
+    <section class="section" id="parties">
+      <div class="container split">
+        <div class="split__text">
+          <p class="script eyebrow">Parties &amp; Events</p>
+          <h2>Munchies for Every Occasion</h2>
+          <p>From office meetings to birthdays, baby showers and family get-togethers — order in bulk and we'll cook it all fresh for your day. Our 5-for deals make feeding a crowd easy.</p>
+          <ul class="icon-list">
+            <li><span><svg aria-hidden="true"><use href="#i-briefcase"/></svg></span> Samosa, mandazi &amp; donut platters for meetings</li>
+            <li><span><svg aria-hidden="true"><use href="#i-party"/></svg></span> Party trays for birthdays and celebrations</li>
+            <li><span><svg aria-hidden="true"><use href="#i-box"/></svg></span> Big packs of Daddies for sharing</li>
+          </ul>
+          <a href="sms:0766189177?body=Hi%20JAGAA's%20Munchies!%20I'd%20like%20a%20quote%20for%20an%20event%20order." class="btn btn--primary btn--lg">Request a Party Quote</a>
+        </div>
+        <div class="split__media">
+          <img src="images/mandazi.jpg" alt="A generous platter of mandazi ready for sharing" loading="lazy">
+        </div>
+      </div>
+    </section>
+
+    <!-- 10. DADDIES PROMO -->
+    <section class="section section--dark" id="daddies">
+      <div class="container promo">
+        <div class="promo__art" aria-hidden="true">
+          <div class="daddies-bag">
+            <span class="daddies-bag__label">Daddies</span>
+            <span class="daddies-bag__sub">JAGAA's Munchies</span>
+          </div>
+          <div class="crumbs"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+        </div>
+        <div class="promo__text">
+          <p class="script eyebrow eyebrow--light">The Crunchy Favourite</p>
+          <h2>Daddies, By the Packet</h2>
+          <p>Our crunchy, moreish Daddies come packed and ready to share — grab a small one for yourself or a big one for the whole crew.</p>
+          <div class="sizes">
+            <button class="size" data-add="daddies" data-opt="0"><span>Small</span><strong>100 kr</strong><em>+ Add</em></button>
+            <button class="size size--featured" data-add="daddies" data-opt="1"><span>Medium</span><strong>300 kr</strong><em>+ Add</em></button>
+            <button class="size" data-add="daddies" data-opt="2"><span>Big</span><strong>500 kr</strong><em>+ Add</em></button>
+          </div>
+          <p class="gift-badge">🎁 Perfect gift — a packet of Daddies always goes down well</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 11. CONTACT -->
+    <section class="section section--cream paper" id="contact">
+      <div class="container visit">
+        <button class="visit__poster" data-lightbox-src="images/menu-poster.jpg" data-lightbox-caption="JAGAA's Munchies snack menu" aria-label="Open the menu poster">
+          <img src="images/menu-poster.jpg" alt="JAGAA's Munchies snack menu poster" loading="lazy">
+        </button>
+        <div class="visit__info">
+          <p class="script eyebrow">Get in Touch</p>
+          <h2>Order &amp; Contact</h2>
+          <ul class="info-list">
+            <li>
+              <span class="info-list__icon"><svg aria-hidden="true"><use href="#i-phone"/></svg></span>
+              <div><strong>Call or text</strong><a href="tel:0766189177" class="big-phone">0766189177</a></div>
+            </li>
+            <li>
+              <span class="info-list__icon"><svg aria-hidden="true"><use href="#i-card"/></svg></span>
+              <div><strong>Made to order</strong>We only make after orders and payments are made.</div>
+            </li>
+            <li>
+              <span class="info-list__icon"><svg aria-hidden="true"><use href="#i-truck"/></svg></span>
+              <div><strong>Delivery</strong>Delivery is discussed between the supplier and the customer — tell us where you are and we'll sort it out together.</div>
+            </li>
+            <li>
+              <span class="info-list__icon"><svg aria-hidden="true"><use href="#i-chat"/></svg></span>
+              <div><strong>Bulk &amp; party orders</strong>Get in touch early for big orders so we can have everything fresh on time.</div>
+            </li>
+          </ul>
+          <div class="visit__ctas">
+            <a href="tel:0766189177" class="btn btn--primary"><svg aria-hidden="true"><use href="#i-phone"/></svg> Call Now</a>
+            <a href="sms:0766189177" class="btn btn--ghost"><svg aria-hidden="true"><use href="#i-chat"/></svg> Send a Text</a>
+          </div>
+          <p class="thanks script">Thank you!</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 12. NEWSLETTER STRIP -->
+    <section class="newsletter">
+      <div class="container newsletter__inner">
+        <div>
+          <h2>Join the Munchies Club</h2>
+          <p>Be the first to hear about new treats, party deals and fresh-batch days. Just send us a text and we'll add you to the list.</p>
+        </div>
+        <a href="sms:0766189177?body=Hi!%20Please%20add%20me%20to%20the%20Munchies%20Club%20list." class="btn btn--light btn--lg">
+          <svg aria-hidden="true"><use href="#i-chat"/></svg> Join by Text
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <a href="#top" class="logo logo--light">
+          <svg class="logo__icon" aria-hidden="true"><use href="#i-wheat"/></svg>
+          <span class="logo__text">JAGAA's <em>Munchies</em></span>
+        </a>
+        <p>Homemade snacks and street food favourites, cooked fresh for every order.</p>
+      </div>
+      <div>
+        <h4>Menu</h4>
+        <ul>
+          <li><a href="#menu" data-tab-link="sweet">Sweet Treats</a></li>
+          <li><a href="#menu" data-tab-link="savoury">Savoury Bites</a></li>
+          <li><a href="#menu" data-tab-link="chapati">Chapati Meals</a></li>
+          <li><a href="#daddies">Daddies</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#story">Our Story</a></li>
+          <li><a href="#how-to-order">How to Order</a></li>
+          <li><a href="#parties">Parties &amp; Events</a></li>
+          <li><a href="#reviews">Reviews</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Connect</h4>
+        <ul>
+          <li><a href="tel:0766189177">Call 0766189177</a></li>
+          <li><a href="sms:0766189177">Send a text</a></li>
+          <li><a href="#contact">Delivery info</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer__bottom">
+      <p>© 2026 JAGAA's Munchies. Made fresh, with a whole lot of love.</p>
+      <p>Orders are prepared once payment is received.</p>
+    </div>
+  </footer>
+
+  <!-- Mobile sticky order bar -->
+  <div class="mobile-bar">
+    <button class="mobile-bar__cart" data-open-cart aria-label="Open your order">
+      <svg aria-hidden="true"><use href="#i-bag"/></svg>
+      <span class="cart-badge" data-cart-count>0</span>
+      <span data-cart-total>0 kr</span>
+    </button>
+    <a href="#menu" class="btn btn--primary mobile-bar__cta">Order Now</a>
+  </div>
+
+  <!-- Cart drawer -->
+  <div class="drawer-backdrop" data-close-cart></div>
+  <aside class="drawer" id="cart" aria-label="Your order" aria-hidden="true">
+    <div class="drawer__head">
+      <h3>Your Order</h3>
+      <button class="icon-btn" data-close-cart aria-label="Close"><svg><use href="#i-close"/></svg></button>
+    </div>
+    <div class="drawer__body" id="cart-items"></div>
+    <div class="drawer__foot">
+      <div class="drawer__total"><span>Total</span><strong data-cart-total>0 kr</strong></div>
+      <p class="drawer__note">We only make after orders and payments are made. Delivery is discussed between you and us.</p>
+      <a class="btn btn--primary btn--block" id="send-order" href="sms:0766189177"><svg aria-hidden="true"><use href="#i-chat"/></svg> Send Order by Text</a>
+      <a class="btn btn--ghost btn--block" href="tel:0766189177"><svg aria-hidden="true"><use href="#i-phone"/></svg> Call 0766189177</a>
+    </div>
+  </aside>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-label="Image viewer">
+    <button class="icon-btn lightbox__close" aria-label="Close"><svg><use href="#i-close"/></svg></button>
+    <figure>
+      <img src="" alt="">
+      <figcaption></figcaption>
+    </figure>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

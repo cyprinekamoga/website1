@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "perplexity-web": {
+      "command": "npx",
+      "args": ["-y", "perplexity-web-mcp@1.1.1"]
+    }
+  }
+}

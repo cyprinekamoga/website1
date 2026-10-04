@@ -2,11 +2,26 @@
   "mcpServers": {
     "perplexity-web": {
       "command": "npx",
-      "args": ["-y", "perplexity-web-mcp@1.1.1"]
+      "args": [
+        "-y",
+        "perplexity-web-mcp@1.1.1"
+      ]
     },
     "playwright": {
       "command": "npx",
-      "args": ["@playwright/mcp@latest"]
+      "args": [
+        "@playwright/mcp@latest"
+      ]
+    },
+    "firecrawl": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "firecrawl-mcp"
+      ],
+      "env": {
+        "FIRECRAWL_API_KEY": "${FIRECRAWL_API_KEY}"
+      }
     }
   }
 }
